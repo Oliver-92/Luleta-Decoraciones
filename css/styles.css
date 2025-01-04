@@ -1,18 +1,27 @@
-.navbar-brand, .nav-link {
+:root {
+    --yellow-color: rgb(255, 193, 7);
+    --font-family: 'ABeeZee', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand,
+.nav-link {
     color: #fff;
-    font-family: 'ABeeZee', sans-serif;
+    font-family: var(--font-family);
     font-size: 20px;
     font-weight: bold;
 }
 
-.navbar-brand:hover, .nav-link:hover {
-    color: rgb(255, 193, 7);
-    
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--yellow-color);
+
 }
 
-.hero-section > .container-fluid {
+/* Hero Section */
+.hero-section>.container-fluid {
     background-image: url("../img/banner-02.webp");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     height: 95%;
 }
@@ -28,17 +37,16 @@
     filter: saturate(200%);
     max-width: 70%;
     max-height: 85%;
-    
 }
 
-
+/* About Us Section */
 #about-us {
     background-image: url("../img/banner-03.webp");
     background-size: cover;
     background-position: center;
 }
 
-#container-text{
+#container-text {
     max-width: 1000px;
     margin-top: 2rem;
     font-family: 'ABeeZee', sans-serif;
@@ -49,27 +57,34 @@
     padding: 1rem;
 }
 
-.card:hover{
-    border: 3px solid rgb(255, 193, 7);
+/* Gallery Section */
+.card:hover {
+    border: 3px solid var(--yellow-color);
 }
 
 .img-gallery {
-    height: 700px; /* Ajusta el tamaño deseado */
-    object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
-    cursor: pointer; /* Indica que es interactivo */
-    border: 1px solid rgb(255, 193, 7);
+    height: 700px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid var(--yellow-color);
 }
 
-.display-4, .text-muted, .card-title {
-    font-family: 'ABeeZee', sans-serif;
+.display-4,
+.text-muted,
+.card-title {
+    font-family: var(--font-family);
 }
 
-/* Footer */
-
-#contact {
-    font-family: 'ABeeZee', sans-serif;
+/* Contact & Footer Section */
+.contact-form {
+    max-width: 800px;
+    margin: auto;
 }
 
+#contact,
+#footer {
+    font-family: var(--font-family);
+}
 
 /* Social Media Icons */
 .social-icons>a {
@@ -81,11 +96,13 @@
     text-shadow: white 2px 2px 5px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1050px) {
-    #container-text{
+    #container-text {
         width: 90%;
         margin: auto;
     }
+
     .img-gallery {
         height: 600px;
     }
@@ -96,12 +113,13 @@
         font-size: 18px;
     }
 }
+
 .img-gallery {
     height: 500px;
 }
 
 @media screen and (max-width: 800px) {
-    #container-text{
+    #container-text {
         font-size: 20px;
     }
 }
@@ -110,19 +128,22 @@
     .nav-link {
         font-size: 15px;
     }
-    .navbar > .container {
+
+    .navbar>.container {
         max-width: 100%;
     }
-   
+
 }
 
 @media screen and (max-width: 576px) {
     #logo-img {
         top: 10rem;
     }
-    #container-text{
+
+    #container-text {
         font-size: 15px;
     }
+
     .img-gallery {
         height: 450px;
     }
