@@ -1,0 +1,134 @@
+.navbar-brand, .nav-link {
+    color: #fff;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: rgb(255, 193, 7);
+    
+}
+
+.hero-section > .container-fluid {
+    background-image: url("../img/banner-02.webp");
+    background-size:cover;
+    height: 95%;
+}
+
+#logo-img {
+    position: absolute;
+    margin: auto;
+    aspect-ratio: 1/1;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    filter: saturate(200%);
+    max-width: 70%;
+    max-height: 85%;
+    
+}
+
+
+#about-us {
+    background-image: url("../img/banner-03.webp");
+    background-size: cover;
+    
+}
+
+#container-text{
+    max-width: 1000px;
+    margin-top: 2rem;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 25px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card:hover{
+    border: 3px solid rgb(255, 193, 7);
+}
+
+.img-gallery {
+    height: 700px; /* Ajusta el tamaño deseado */
+    object-fit: cover; /* Asegura que las imágenes se recorten proporcionalmente */
+    cursor: pointer; /* Indica que es interactivo */
+    border: 1px solid rgb(255, 193, 7);
+}
+
+.display-4, .text-muted, .card-title {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+/* Footer */
+
+#contact {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+
+/* Social Media Icons */
+.social-icons>a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons>a>i:hover {
+    text-shadow: white 2px 2px 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    #container-text{
+        width: 90%;
+        margin: auto;
+    }
+    .img-gallery {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-link {
+        font-size: 18px;
+    }
+}
+.img-gallery {
+    height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+    #container-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link {
+        font-size: 15px;
+    }
+    .navbar > .container {
+        max-width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    #logo-img {
+        top: 10rem;
+    }
+    #container-text{
+        font-size: 15px;
+    }
+    .img-gallery {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img-gallery {
+        height: 400px;
+    }
+}
